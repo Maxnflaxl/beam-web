@@ -16,6 +16,7 @@ jobs:
       deployments: write
     env:
       PUBLIC_WEB_URL: ${{ secrets.PUBLIC_WEB_URL }}
+      NODE_OPTIONS: ${{ secrets.NODE_OPTIONS }}
     name: Deploy to Cloudflare Pages
     steps:
       - name: Checkout
